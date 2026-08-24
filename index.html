@@ -90,23 +90,11 @@
     letter-spacing: 0.02em;
   }
   .brand-mark{
-    width: 34px; height: 34px;
-    border: 1.5px solid var(--border-strong);
+    width: 34px; height: 39px;
     display:flex; align-items:center; justify-content:center;
-    font-family: var(--font-mono);
-    font-size: 13px;
-    color: var(--amber);
     position: relative;
     flex-shrink: 0;
   }
-  .brand-mark::before, .brand-mark::after{
-    content:"";
-    position:absolute;
-    width:5px; height:5px;
-    border: 1px solid var(--amber-dim);
-  }
-  .brand-mark::before{ top:-1px; left:-1px; border-right:none; border-bottom:none; }
-  .brand-mark::after{ bottom:-1px; right:-1px; border-left:none; border-top:none; }
   .brand-name .full{ display:inline; }
   .brand-sub{
     display:block;
@@ -473,7 +461,13 @@
 <header>
   <div class="wrap nav">
     <a href="#top" class="brand">
-      <span class="brand-mark">Z</span>
+      <span class="brand-mark">
+        <svg width="34" height="39" viewBox="0 0 40 46" aria-hidden="true">
+          <text x="20" y="24" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="22" style="fill:var(--amber)">Z</text>
+          <line x1="6" y1="30" x2="34" y2="30" style="stroke:var(--teal)" stroke-width="1.5"/>
+          <text x="20" y="41" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="500" font-size="8" letter-spacing="2" style="fill:var(--text-faint)">PSC</text>
+        </svg>
+      </span>
       <span class="brand-name">
         ZARSE PUBLIC SAFETY CONSULTING
         <span class="brand-sub">Technology Infrastructure &amp; Systems</span>
